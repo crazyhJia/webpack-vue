@@ -9,9 +9,14 @@
 </comment>
 <template>
     <div class="appClass">
-        hello {{name}}
-        <vtitle title="title组件"></vtitle>
-        <vbutton @clickBtn="handleClick">我是按钮</vbutton>
+        <!--hello {{name}}-->
+        <!--<vtitle title="title组件"></vtitle>-->
+        <!--<vbutton @clickBtn="handleClick">我是按钮</vbutton>-->
+        <!--<div>-->
+            <!--<img src="images/cat.png" style="width: 200px"/>-->
+        <!--</div>-->
+
+        <router-view></router-view>
     </div>
 </template>
 

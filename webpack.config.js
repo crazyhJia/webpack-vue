@@ -35,6 +35,10 @@ var config ={
 					use: 'css-loader',
 					fallback: 'style-loader'
 				})
+			},
+			{
+				test: /\.(jpg|png|gif|woff|svg|eot|tff)\??.*$/,
+                loader:'url-loader?limit=1024'
 			}
 		]
     },
