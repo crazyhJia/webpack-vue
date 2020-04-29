@@ -8,9 +8,12 @@ import App from './app.vue'
 import VueRouter from 'vue-router'
 //导入Vuex
 import Vuex from 'vuex'
+//导入vue-bus
+import VueBus from './vue-bus/vue-bus'
 
 Vue.use(VueRouter)
 Vue.use(Vuex)
+Vue.use(VueBus)
 
 const Routers = [
     {

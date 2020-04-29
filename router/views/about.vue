@@ -18,11 +18,19 @@
         <div >{{listFilter}}</div>
         <div>{{listCount}}</div>
         <button @click="bakcClick">back</button>
+        <Random :number="number"></Random>
     </div>
 </template>
 <script>
+    import Random from './random.vue'
     export default {
         name: "about",
+        data(){
+            return{
+                number: 1,
+            }
+        },
+        components: {Random},
         computed:{
             count(){
                 return this.$store.state.count
@@ -54,8 +62,16 @@
             },
             bakcClick(){
                 this.$router.push('/index')
-            }
-        }
+            },
+            handleRandomNum(num){this.number += num;}
+        },
+        created(){
+            this.$bus.on('addRandom',this.handleRandomNum)
+            // this.$bus.on('addRandom',num => {
+            //     this.number += num;
+            // })
+        },
+        beforeDestroy(){this.$bus.off('addRandom',this.handleRandomNum)}
     }
 </script>
 
