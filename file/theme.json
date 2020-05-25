@@ -1,0 +1,45 @@
+/**
+ * @class
+ * @author    Administrator
+ * @date      2020/5/25 11:02
+ * @Copyright 迪科云起
+ * @Description
+ */
+{
+    "ret": true,
+    "data": {
+        "othera": [
+            {
+                "name": "日常心理学",
+                "thumbnail": "http://pic3.zhimg.comlxxx.jpg",
+                "color": "15007",
+                "escription": "了解自己和别人，了解彼此的欲望和局限."
+            },
+            {
+                "name": "日常心理学2",
+                "thumbnail": "http://pic3.zhimg.comlxxx.jpg",
+                "color": "15007",
+                "escription": "了解自己和别人，了解彼此的欲望和局限."
+            },
+            {
+                "name": "日常心理学3",
+                "thumbnail": "http://pic3.zhimg.comlxxx.jpg",
+                "color": "15007",
+                "escription": "了解自己和别人，了解彼此的欲望和局限."
+            },
+            {
+                "name": "日常心理学4",
+                "thumbnail": "http://pic3.zhimg.comlxxx.jpg",
+                "color": "15007",
+                "escription": "了解自己和别人，了解彼此的欲望和局限."
+            },
+            {
+                "name": "日常心理学5",
+                "thumbnail": "http://pic3.zhimg.comlxxx.jpg",
+                "color": "15007",
+                "escription": "了解自己和别人，了解彼此的欲望和局限."
+            }
+        ]
+    }
+}
+

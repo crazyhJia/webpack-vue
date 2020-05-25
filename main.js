@@ -10,6 +10,8 @@ import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 //导入vue-bus
 import VueBus from './vue-bus/vue-bus'
+//导入知乎日报的css
+import './css/style.css'
 
 Vue.use(VueRouter)
 Vue.use(Vuex)
