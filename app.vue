@@ -8,46 +8,26 @@
     */
 </comment>
 <template>
-    <div class="appClass">
-        <!--hello {{name}}-->
-        <!--<vtitle title="title组件"></vtitle>-->
-        <!--<vbutton @clickBtn="handleClick">我是按钮</vbutton>-->
-        <!--<div>-->
-            <!--<img src="images/cat.png" style="width: 200px"/>-->
-        <!--</div>-->
-
+    <div>
+        <div class="header">
+            <router-link to="/list"  class="header-title">电商网站示例</router-link>
+            <div class="header-menu">
+                <router-link to="/cart" class="header-menu-cart">
+                    购物车
+                    <span v-if="cartList.length">{{ cartList.length }}</span>
+                </router-link>
+            </div>
+        </div>
         <router-view></router-view>
     </div>
 </template>
-
 <script>
-    import vtitle from './title.vue'
-    import vbutton from './button.vue'
     export default {
-        name: "app.vue",
-        components:{
-          vtitle,
-          vbutton
-        },
-        data(){
-            return{
-                name: 'vue单文件，真是不容易啊！'
-            }
-        },
-        methods:{
-            handleClick(e){
-                console.log(e)
+        computed: {
+            cartList () {
+                console.log(this.$store.state.cartList)
+                return this.$store.state.cartList;
             }
         }
     }
 </script>
-
-<style scoped>
-    /*此处的样式，插件extract-text-webpack-plugin已经配置了，
-    会被提取统一打包到main.css中，*/
-    /*scoped属性是只对当前组件有效。*/
-    .appClass{
-        font-size: 20px;
-        color: darkorange;
-    }
-</style>
